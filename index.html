@@ -4,173 +4,203 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rana Divyarajsinh H. | Frontend Developer</title>
+  <title>Rana Divyarajsinh H. | Web Developer Portfolio</title>
 
-  <!-- Basic, framework-free styling -->
+  <!-- ===== Google Fonts ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- ===== Font Awesome for icons ===== -->
+  <script src="https://kit.fontawesome.com/9e0e8f7322.js" crossorigin="anonymous"></script>
+
   <style>
-    /* Reset & base */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    /* ===== CSS Reset ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ===== Root Variables ===== */
+    :root {
+      --bg: #0f172a;
+      --accent: #38bdf8;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --card: #1e293b;
+    }
+
     body {
-      font-family: "Segoe UI", Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
       line-height: 1.6;
-      color: #222;
-      background: #f7f9fc;
     }
-    header {
-      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-      color: #fff;
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ===== Layout ===== */
+    header, section {
+      padding: 4rem 1rem;
       text-align: center;
-      padding: 4rem 1rem 3rem;
     }
+
     header img {
-      width: 120px;
-      height: 120px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid #38bdf8;
+      border: 4px solid var(--accent);
       margin-bottom: 1rem;
     }
-    header h1 { font-size: 2.2rem; margin-bottom: .5rem; }
-    header p { font-size: 1.1rem; opacity: .9; }
 
-    /* Sections */
-    section {
-      max-width: 900px;
-      margin: 2.5rem auto;
-      padding: 1.5rem 1rem;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,.05);
-    }
-    section h2 {
-      margin-bottom: 1rem;
-      color: #0f172a;
-      border-bottom: 2px solid #38bdf8;
+    h1 { font-size: 2.5rem; margin-bottom: .5rem; }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      position: relative;
       display: inline-block;
-      padding-bottom: .25rem;
+    }
+    h2::after {
+      content: '';
+      width: 60%;
+      height: 3px;
+      background: var(--accent);
+      position: absolute;
+      left: 50%;
+      bottom: -8px;
+      transform: translateX(-50%);
     }
 
-    /* Skills list */
-    ul {
+    p { max-width: 700px; margin: 0 auto; }
+
+    /* ===== Skills ===== */
+    #skills ul {
       list-style: none;
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
-      gap: .75rem;
-    }
-    ul li {
-      background: #e0f2fe;
-      color: #0c4a6e;
-      padding: .5rem 1rem;
-      border-radius: 4px;
-      font-weight: 500;
-    }
-
-    /* Projects */
-    #projects ul li {
-      background: transparent;
-      padding: .5rem 0;
-      font-weight: normal;
-    }
-    #projects strong { color: #0f172a; }
-
-    /* CTA button */
-    .cta {
-      display: inline-block;
+      gap: 1rem;
       margin-top: 1rem;
-      padding: .75rem 1.75rem;
-      background: #38bdf8;
-      color: #fff;
-      border-radius: 6px;
-      text-decoration: none;
+    }
+
+    #skills li {
+      background: var(--card);
+      padding: .75rem 1.5rem;
+      border-radius: 30px;
       font-weight: 600;
+    }
+
+    /* ===== Projects ===== */
+    #projects ul {
+      list-style: none;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    #projects li {
+      background: var(--card);
+      padding: 1.25rem 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      transition: transform .3s;
+    }
+    #projects li:hover { transform: translateY(-4px); }
+
+    /* ===== Button ===== */
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: .75rem 2rem;
+      background: var(--accent);
+      color: #0f172a;
+      font-weight: 600;
+      border-radius: 30px;
       transition: background .3s;
     }
-    .cta:hover { background: #0ea5e9; }
+    .btn:hover { background: #7dd3fc; text-decoration: none; }
 
-    /* Footer */
+    /* ===== Contact ===== */
+    #contact p { margin-bottom: .5rem; }
+    #contact i { margin-right: .5rem; }
+
+    /* ===== Footer ===== */
     footer {
       text-align: center;
       padding: 2rem 1rem;
       font-size: .9rem;
-      color: #64748b;
+      color: var(--muted);
     }
 
-    /* Responsive */
-    @media (max-width: 600px) {
-      header h1 { font-size: 1.75rem; }
+    /* ===== Responsive ===== */
+    @media (min-width: 768px) {
+      header, section { padding: 5rem 2rem; }
+      h1 { font-size: 3rem; }
+      h2 { font-size: 2.25rem; }
     }
   </style>
 </head>
 
 <body>
-  <!-- Hero -->
+  <!-- ===== Hero Section ===== -->
   <header>
-    <img src="image2.jpeg" alt="Portrait of Rana Divyarajsinh H." />
+    <img src="image2.jpeg" alt="Rana Divyarajsinh H." />
     <h1>Rana Divyarajsinh H.</h1>
-    <p>Frontend Developer | HTML, CSS & JavaScript</p>
+    <p>Frontend Developer specializing in HTML5, CSS3 & JavaScript</p>
   </header>
 
-  <!-- About -->
+  <!-- ===== About Section ===== -->
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I'm an enthusiastic frontend developer passionate about building fast,
-      accessible and visually appealing websites. From interactive games to
-      fully-responsive landing pages, I love turning ideas into clean code.
-      Currently looking for an internship where I can learn, contribute and grow
-      alongside a supportive team.
+      I'm an enthusiastic frontend developer passionate about building clean, responsive and accessible web experiences. My projects range from interactive games to Amazon-inspired layouts, all created with vanilla HTML, CSS and JavaScript. I am currently looking for an internship where I can contribute, collaborate and keep leveling up.
     </p>
   </section>
 
-  <!-- Skills -->
+  <!-- ===== Skills Section ===== -->
   <section id="skills">
     <h2>Skills</h2>
     <ul>
       <li>HTML5</li>
       <li>CSS3</li>
       <li>JavaScript (ES6+)</li>
-      <li>Responsive Design</li>
-      <li>DOM Manipulation</li>
     </ul>
   </section>
 
-  <!-- Projects -->
+  <!-- ===== Projects Section ===== -->
   <section id="projects">
     <h2>Projects</h2>
     <ul>
-      <li><strong>Rock-Paper-Scissors Game</strong> – Interactive browser game with score tracking</li>
-      <li><strong>Travel Website</strong> – Mobile-first, responsive layout with modern CSS</li>
-      <li><strong>To-Do List App</strong> – Add, edit & persist tasks using localStorage</li>
-      <li><strong>Amazon Clone Page</strong> – Product grid & checkout flow UI</li>
-      <li><strong>Abstract HelpCenter</strong> – Clean help-desk layout with search & FAQ</li>
+      <li><strong>Rock-Paper-Scissor Game</strong> – Interactive game using DOM manipulation</li>
+      <li><strong>Travel Website</strong> – Responsive design with visual appeal</li>
+      <li><strong>To-Do List</strong> – Task management app with localStorage</li>
+      <li><strong>Amazon Clone</strong> – Product layout & UI mimic</li>
+      <li><strong>Abstract HelpCenter</strong> – Structured layout and clean UI</li>
     </ul>
   </section>
 
-  <!-- Resume -->
+  <!-- ===== Resume Section ===== -->
   <section id="resume">
     <h2>Resume</h2>
-    <p>Want more details?</p>
-    <a class="cta" href="Frontend_Internship_Resume_Rana_Divyarajsinh.pdf" download>
-      Download My Resume
-    </a>
+    <p>Want to know more about my experience?</p>
+    <a class="btn" href="Frontend_Internship_Resume_Rana_Divyarajsinh.pdf" download>Download My Resume</a>
   </section>
 
-  <!-- Contact -->
+  <!-- ===== Contact Section ===== -->
   <section id="contact">
     <h2>Contact Me</h2>
-    <p><strong>Phone:</strong> <a href="tel:+919904099441">+91 9904099441</a></p>
-    <p><strong>Email:</strong> <a href="mailto:divyarajsinhrana0081@gmail.com">divyarajsinhrana0081@gmail.com</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/divyarajsinh-rana-77a1372b4" target="_blank">linkedin.com/in/divyarajsinh-rana</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/Dev0081118" target="_blank">github.com/Dev0081118</a></p>
+    <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> +91 9904099441</p>
+    <p><i class="fas fa-envelope"></i><strong>Email:</strong> <a href="mailto:divyarajsinhrana0081@gmail.com">divyarajsinhrana0081@gmail.com</a></p>
+    <p><i class="fab fa-linkedin"></i><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/divyarajsinh-rana-77a1372b4" target="_blank" rel="noopener">Connect with me</a></p>
+    <p><i class="fab fa-github"></i><strong>GitHub:</strong> <a href="https://github.com/Dev0081118" target="_blank" rel="noopener">Explore my code</a></p>
   </section>
 
-  <!-- Footer -->
+  <!-- ===== Footer ===== -->
   <footer>
-    &copy; <span id="year"></span> Rana Divyarajsinh H. All rights reserved.
+    <p>&copy; <span id="year"></span> Rana Divyarajsinh H. All rights reserved.</p>
   </footer>
 
-  <!-- Dynamic year -->
   <script>
+    // Dynamic year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
