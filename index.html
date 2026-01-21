@@ -2,90 +2,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rana Divyarajsinh – Web Developer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rana Divyarajsinh | Frontend Web Developer</title>
+
+  <!-- Basic, framework-free styles -->
   <style>
-    /* Reset & base */
-    *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif}
-    body{background:#f5f7fa;color:#111;line-height:1.6}
-    img{max-width:100%;display:block}
-    a{color:#0066ff;text-decoration:none}
-    a:hover{text-decoration:underline}
-    header,section{padding:3rem 1.5rem;text-align:center}
-    header{background:#0066ff;color:#fff}
-    header img{width:140px;height:140px;border-radius:50%;margin:0 auto 1rem;border:4px solid #fff;object-fit:cover}
-    h1{font-size:2rem;margin-bottom:.5rem}
-    h2{font-size:1.5rem;margin-bottom:1rem;color:#0066ff}
-    ul{list-style:none;max-width:600px;margin:0 auto;text-align:left}
-    li{margin:.5rem 0}
-    .btn{background:#fff;color:#0066ff;padding:.75rem 1.5rem;border-radius:4px;font-weight:600;display:inline-block;margin-top:1rem}
-    .btn:hover{background:#e6ecff;text-decoration:none}
-    footer{background:#111;color:#ccc;padding:1.5rem;text-align:center;font-size:.875rem}
-    /* Small-screen tweak */
-    @media(min-width:600px){header{padding:4rem 2rem}h1{font-size:2.5rem}}
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f4f4f4;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 15px;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 8px;
+    }
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    h2 {
+      padding-top: 25px;
+      margin-bottom: 15px;
+      color: #111;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      background: #fafafa;
+      margin: 8px 0;
+      padding: 10px 14px;
+      border-left: 4px solid #0077cc;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    /* Call-To-Action button */
+    .cta {
+      display: inline-block;
+      margin: 25px 0 35px;
+      padding: 12px 28px;
+      background: #0077cc;
+      color: #fff;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .cta:hover {
+      background: #005fa3;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    /* Make images responsive */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   </style>
 </head>
-<body>
 
+<body>
   <!-- Hero -->
   <header>
-    <img src="image2.jpeg" alt="Portrait of Rana Divyarajsinh">
+    <img src="image2.jpeg" alt="Portrait of Rana Divyarajsinh" />
     <h1>Rana Divyarajsinh</h1>
-    <p>Frontend Developer · HTML · CSS · JavaScript</p>
-    <a href="#contact" class="btn">Hire Me</a>
+    <p>Frontend Developer &nbsp;•&nbsp; HTML, CSS, JavaScript</p>
   </header>
 
   <!-- About -->
-  <section id="about">
+  <section id="about" aria-label="About me">
     <h2>About Me</h2>
     <p>
-      I'm an aspiring frontend developer who loves turning ideas into clean, responsive websites.
-      From interactive games to full-scale responsive layouts, I enjoy building projects that are both functional and beautiful.
-      Currently looking for an internship where I can contribute, learn, and grow alongside a passionate team.
+      I'm an enthusiastic frontend developer who loves turning ideas into fast,
+      accessible, and pixel-perfect websites. Solid with HTML5, CSS3, and
+      modern JavaScript, I've built several projects that highlight clean code
+      and thoughtful UX. I'm currently looking for an internship where I can
+      collaborate, learn, and make a real impact.
     </p>
   </section>
 
   <!-- Skills -->
-  <section id="skills">
+  <section id="skills" aria-label="Skills">
     <h2>Skills</h2>
     <ul>
-      <li>HTML5 & Semantic Markup</li>
-      <li>CSS3, Flexbox & Grid</li>
-      <li>JavaScript (ES6+) & DOM Manipulation</li>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript (ES6+)</li>
     </ul>
   </section>
 
   <!-- Projects -->
-  <section id="projects">
+  <section id="projects" aria-label="Projects">
     <h2>Projects</h2>
     <ul>
-      <li><strong>Rock-Paper-Scissors Game</strong> – Interactive browser game with score tracking</li>
+      <li><strong>Rock-Paper-Scissors Game</strong> – Interactive browser game with DOM manipulation</li>
       <li><strong>Travel Website</strong> – Fully responsive, mobile-first design</li>
-      <li><strong>To-Do List App</strong> – Add, delete & persist tasks via localStorage</li>
-      <li><strong>Amazon Clone</strong> – Product grid & checkout flow UI</li>
-      <li><strong>Abstract HelpCenter</strong> – Clean help-desk layout with search & FAQ</li>
+      <li><strong>To-Do List</strong> – Add, edit, delete and persist tasks with localStorage</li>
+      <li><strong>Amazon Clone</strong> – Product grid and cart layout mimicking Amazon's UI</li>
+      <li><strong>Abstract HelpCenter</strong> – Clean help-desk interface focused on usability</li>
     </ul>
   </section>
 
   <!-- Resume -->
-  <section id="resume">
+  <section id="resume" aria-label="Resume">
     <h2>Resume</h2>
-    <a href="Frontend_Internship_Resume_Rana_Divyarajsinh_2.pdf" class="btn" download>Download My Resume</a>
+    <p>Want more details?</p>
+    <a class="cta" href="Frontend_Internship_Resume_Rana_Divyarajsinh_2.pdf" download>Download My Resume</a>
   </section>
 
   <!-- Contact -->
-  <section id="contact">
+  <section id="contact" aria-label="Contact">
     <h2>Contact Me</h2>
     <p><strong>Phone:</strong> <a href="tel:+919904099441">+91 99040 99441</a></p>
     <p><strong>Email:</strong> <a href="mailto:divyarajsinhrana0081@gmail.com">divyarajsinhrana0081@gmail.com</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/divyarajsinh-rana-77a1372b4" target="_blank">linkedin.com/in/divyarajsinh-rana</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/Dev0081118" target="_blank">github.com/Dev0081118</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/divyarajsinh-rana-77a1372b4" target="_blank" rel="noopener">linkedin.com/in/divyarajsinh-rana</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/Dev0081118" target="_blank" rel="noopener">github.com/Dev0081118</a></p>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; <span id="year"></span> Rana Divyarajsinh. All rights reserved.</p>
+    &copy; <span id="year"></span> Rana Divyarajsinh. All rights reserved.
   </footer>
 
   <script>
