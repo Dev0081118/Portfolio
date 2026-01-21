@@ -4,167 +4,213 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rana Divyarajsinh | Frontend Web Developer</title>
+  <title>Rana Divyarajsinh | Frontend Developer</title>
 
-  <!-- Basic, framework-free styles -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Custom Styles -->
   <style>
-    /* Reset */
+    /* Reset & base */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
     body {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Poppins', sans-serif;
+      background: #f5f9ff;
+      color: #222;
       line-height: 1.6;
-      color: #333;
-      background: #f4f4f4;
-    }
-    header {
-      background: #111;
-      color: #fff;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    header img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      border: 4px solid #fff;
-      margin-bottom: 15px;
-    }
-    header h1 {
-      font-size: 2.2rem;
-      margin-bottom: 8px;
-    }
-    header p {
-      font-size: 1.1rem;
-      opacity: 0.9;
-    }
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    }
-    h2 {
-      padding-top: 25px;
-      margin-bottom: 15px;
-      color: #111;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    ul li {
-      background: #fafafa;
-      margin: 8px 0;
-      padding: 10px 14px;
-      border-left: 4px solid #0077cc;
     }
     a {
-      color: #0077cc;
+      color: #0066ff;
       text-decoration: none;
     }
     a:hover {
       text-decoration: underline;
     }
-    /* Call-To-Action button */
+
+    /* Layout */
+    header,
+    section {
+      padding: 3rem 1rem;
+    }
+    header {
+      background: linear-gradient(135deg, #0066ff, #0049b5);
+      color: #fff;
+      text-align: center;
+    }
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
+    /* Sections */
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    section h2 {
+      margin-bottom: 1rem;
+      font-size: 1.7rem;
+      color: #0049b5;
+    }
+
+    /* Skills */
+    #skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      list-style: none;
+    }
+    #skills li {
+      background: #d9e7ff;
+      padding: 0.6rem 1.2rem;
+      border-radius: 20px;
+      font-weight: 500;
+    }
+
+    /* Projects */
+    #projects ul {
+      list-style: none;
+      display: grid;
+      gap: 1rem;
+    }
+    #projects li {
+      background: #fff;
+      padding: 1.2rem;
+      border-left: 4px solid #0066ff;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    /* CTA Button */
     .cta {
       display: inline-block;
-      margin: 25px 0 35px;
-      padding: 12px 28px;
-      background: #0077cc;
+      background: #0066ff;
       color: #fff;
-      border-radius: 4px;
-      font-weight: bold;
+      padding: 0.9rem 2rem;
+      border-radius: 30px;
+      font-weight: 600;
+      margin-top: 1.2rem;
       transition: background 0.3s ease;
     }
     .cta:hover {
-      background: #005fa3;
+      background: #0049b5;
       text-decoration: none;
     }
+
+    /* Footer */
     footer {
       text-align: center;
-      padding: 20px 10px;
+      padding: 1.5rem 0;
       font-size: 0.9rem;
-      color: #777;
+      color: #555;
     }
-    /* Make images responsive */
-    img {
-      max-width: 100%;
-      height: auto;
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+      section {
+        padding: 2.5rem 1rem;
+      }
     }
   </style>
 </head>
 
 <body>
-  <!-- Hero -->
+  <!-- Hero Section -->
   <header>
-    <img src="image2.jpeg" alt="Portrait of Rana Divyarajsinh" />
+    <img src="image2.jpeg" alt="Rana Divyarajsinh" />
     <h1>Rana Divyarajsinh</h1>
-    <p>Frontend Developer &nbsp;•&nbsp; HTML, CSS, JavaScript</p>
+    <p>Frontend Developer &nbsp;&bull;&nbsp; HTML &nbsp; CSS &nbsp; JavaScript</p>
+    <a href="#contact" class="cta">Hire Me</a>
   </header>
 
-  <!-- About -->
-  <section id="about" aria-label="About me">
+  <!-- About Section -->
+  <section id="about">
     <h2>About Me</h2>
     <p>
-      I'm an enthusiastic frontend developer who loves turning ideas into fast,
-      accessible, and pixel-perfect websites. Solid with HTML5, CSS3, and
-      modern JavaScript, I've built several projects that highlight clean code
-      and thoughtful UX. I'm currently looking for an internship where I can
-      collaborate, learn, and make a real impact.
+      I'm a self-taught frontend developer who loves turning ideas into fast, beautiful websites. From responsive layouts to interactive JavaScript features, I build projects that are clean, accessible, and user-focused. I'm currently looking for an internship where I can learn from experienced developers and bring value to real-world products.
     </p>
   </section>
 
-  <!-- Skills -->
-  <section id="skills" aria-label="Skills">
+  <!-- Skills Section -->
+  <section id="skills">
     <h2>Skills</h2>
     <ul>
       <li>HTML5</li>
-      <li>CSS3</li>
+      <li>CSS3 / Flexbox / Grid</li>
       <li>JavaScript (ES6+)</li>
+      <li>Git & GitHub</li>
+      <li>Responsive Design</li>
     </ul>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" aria-label="Projects">
+  <!-- Projects Section -->
+  <section id="projects">
     <h2>Projects</h2>
     <ul>
-      <li><strong>Rock-Paper-Scissors Game</strong> – Interactive browser game with DOM manipulation</li>
-      <li><strong>Travel Website</strong> – Fully responsive, mobile-first design</li>
-      <li><strong>To-Do List</strong> – Add, edit, delete and persist tasks with localStorage</li>
-      <li><strong>Amazon Clone</strong> – Product grid and cart layout mimicking Amazon's UI</li>
-      <li><strong>Abstract HelpCenter</strong> – Clean help-desk interface focused on usability</li>
+      <li>
+        <strong>Rock-Paper-Scissors Game</strong> – Classic browser game built with vanilla JavaScript and DOM manipulation.
+      </li>
+      <li>
+        <strong>Travel Website</strong> – Fully responsive landing page with smooth scrolling and mobile-first CSS.
+      </li>
+      <li>
+        <strong>To-Do List App</strong> – Add, edit, delete, and persist tasks using localStorage.
+      </li>
+      <li>
+        <strong>Amazon Clone</strong> – Product grid, cart preview, and checkout flow UI.
+      </li>
+      <li>
+        <strong>Abstract HelpCenter</strong> – Clean documentation layout with search and collapsible sections.
+      </li>
     </ul>
   </section>
 
-  <!-- Resume -->
-  <section id="resume" aria-label="Resume">
+  <!-- Resume Section -->
+  <section id="resume">
     <h2>Resume</h2>
-    <p>Want more details?</p>
-    <a class="cta" href="Frontend_Internship_Resume_Rana_Divyarajsinh_2.pdf" download>Download My Resume</a>
+    <p>Want more details about my experience?</p>
+    <a href="Frontend_Internship_Resume_Rana_Divyarajsinh 2 copy.pdf" class="cta" download>
+      <i class="fas fa-download"></i> &nbsp;Download Resume
+    </a>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" aria-label="Contact">
+  <!-- Contact Section -->
+  <section id="contact">
     <h2>Contact Me</h2>
-    <p><strong>Phone:</strong> <a href="tel:+919904099441">+91 99040 99441</a></p>
-    <p><strong>Email:</strong> <a href="mailto:divyarajsinhrana0081@gmail.com">divyarajsinhrana0081@gmail.com</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/divyarajsinh-rana-77a1372b4" target="_blank" rel="noopener">linkedin.com/in/divyarajsinh-rana</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/Dev0081118" target="_blank" rel="noopener">github.com/Dev0081118</a></p>
+    <p><i class="fas fa-phone-alt"></i> &nbsp;+91 9904099441</p>
+    <p><i class="fas fa-envelope"></i> &nbsp;<a href="mailto:divyarajsinhrana0081@gmail.com">divyarajsinhrana0081@gmail.com</a></p>
+    <p><i class="fab fa-linkedin"></i> &nbsp;<a href="https://linkedin.com/in/divyarajsinh-rana-77a1372b4" target="_blank">LinkedIn Profile</a></p>
+    <p><i class="fab fa-github"></i> &nbsp;<a href="https://github.com/Dev0081118" target="_blank">GitHub Portfolio</a></p>
   </section>
 
-  <!-- Footer -->
   <footer>
     &copy; <span id="year"></span> Rana Divyarajsinh. All rights reserved.
   </footer>
 
   <script>
-    // Update year automatically
+    // Auto-update footer year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
