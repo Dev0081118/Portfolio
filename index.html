@@ -4,89 +4,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rana Divyarajsinh H. | Web Developer Portfolio</title>
+  <title>Rana Divyarajsinh | Frontend Developer</title>
   <style>
-    /* Reset & Base */
-    *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif}
-    body{background:#f5f7fa;color:#333;line-height:1.6;scroll-behavior:smooth}
-    a{color:#0066ff;text-decoration:none}
+    /* Reset & base */
+    *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    body{background:#f7f9fc;color:#222;line-height:1.6;scroll-behavior:smooth}
+    a{color:#0d6efd;text-decoration:none}
     a:hover{text-decoration:underline}
-    header,section{padding:60px 20px;max-width:900px;margin:auto}
-    header{text-align:center;background:#fff;border-radius:12px;margin-top:30px;box-shadow:0 4px 14px rgba(0,0,0,.08)}
-    header img{width:140px;height:140px;border-radius:50%;object-fit:cover;border:4px solid #0066ff}
-    h1{margin-top:18px;font-size:2.2rem;color:#111}
-    header p{font-size:1.1rem;color:#555;margin-top:6px}
-    h2{margin-bottom:20px;font-size:1.8rem;color:#111}
-    ul{list-style:none;padding-left:0}
-    li{background:#fff;margin:8px 0;padding:12px 16px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.05)}
-    footer{text-align:center;padding:20px;font-size:.9rem;color:#777}
+    img{max-width:100%;display:block;border-radius:50%;margin:0 auto 1rem}
+    header,section{padding:3rem 1.5rem;text-align:center}
+    header{background:linear-gradient(135deg,#0d6efd 0%,#00b4d8 100%);color:#fff}
+    h1{font-size:2.2rem;margin-bottom:.5rem}
+    h2{margin-bottom:1rem;font-size:1.8rem;color:#0d6efd}
+    ul{list-style:none;max-width:600px;margin:0 auto;text-align:left}
+    li{margin:.5rem 0}
+    footer{background:#0d1b2a;color:#fff;padding:1.5rem;text-align:center;font-size:.9rem}
+
     /* CTA Button */
-    .cta{display:inline-block;margin-top:20px;padding:12px 28px;background:#0066ff;color:#fff;border-radius:30px;font-weight:bold;transition:.3s}
-    .cta:hover{background:#004ccc;text-decoration:none}
+    .cta{
+      display:inline-block;
+      background:#0d6efd;
+      color:#fff;
+      padding:.75rem 1.5rem;
+      border-radius:4px;
+      margin-top:1rem;
+      transition:background .3s;
+    }
+    .cta:hover{background:#0056d3;text-decoration:none}
+
     /* Responsive */
-    @media(max-width:600px){header,section{padding:40px 15px}h1{font-size:1.8rem}}
+    @media(min-width:600px){
+      header,section{padding:4rem 2rem}
+      h1{font-size:2.8rem}
+    }
   </style>
 </head>
-<body>
 
-  <!-- Hero Section -->
+<body>
+  <!-- Hero -->
   <header>
-    <img src="image2.jpeg" alt="Rana Divyarajsinh H.">
-    <h1>Rana Divyarajsinh H.</h1>
-    <p>Frontend Developer | HTML, CSS & JavaScript</p>
+    <img src="image2.jpeg" alt="Rana Divyarajsinh">
+    <h1>Rana Divyarajsinh</h1>
+    <p>Frontend Developer · HTML · CSS · JavaScript</p>
     <a href="#contact" class="cta">Hire Me</a>
   </header>
 
-  <!-- About Section -->
+  <!-- About -->
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I'm an enthusiastic frontend developer who loves turning ideas into clean, responsive websites. With solid practice in HTML, CSS and JavaScript, I've built several mini-projects that solve real-world problems and look great on every device. I'm now looking for an internship where I can bring value, learn fast and grow alongside a supportive team.
+      I’m an aspiring frontend developer who loves turning ideas into fast, accessible websites.
+      From responsive layouts to interactive JavaScript features, I enjoy building projects that
+      are both beautiful and usable. I’m currently looking for an internship where I can contribute,
+      learn, and grow alongside a supportive team.
     </p>
   </section>
 
-  <!-- Skills Section -->
+  <!-- Skills -->
   <section id="skills">
     <h2>Skills</h2>
     <ul>
-      <li>HTML5 & Semantic Markup</li>
-      <li>CSS3, Flexbox & Grid</li>
-      <li>JavaScript (ES6+) & DOM Manipulation</li>
+      <li>HTML5 – semantic, accessible markup</li>
+      <li>CSS3 – flexbox, grid, animations & responsive design</li>
+      <li>JavaScript ES6 – DOM, events, fetch, localStorage</li>
     </ul>
   </section>
 
-  <!-- Projects Section -->
+  <!-- Projects -->
   <section id="projects">
     <h2>Projects</h2>
     <ul>
       <li><strong>Rock-Paper-Scissors Game</strong> – Interactive browser game with score tracking</li>
       <li><strong>Travel Website</strong> – Fully responsive landing page with modern CSS</li>
-      <li><strong>To-Do List App</strong> – Add, edit & delete tasks saved in localStorage</li>
-      <li><strong>Amazon Clone</strong> – Product grid layout mimicking Amazon's UI</li>
-      <li><strong>Abstract HelpCenter</strong> – Clean help-center layout with search feel</li>
+      <li><strong>To-Do List</strong> – Add, edit, delete tasks; data persists in localStorage</li>
+      <li><strong>Amazon Clone</strong> – Product grid & cart UI mimicking Amazon’s design</li>
+      <li><strong>Abstract HelpCenter</strong> – Clean help-center layout with search & FAQ</li>
     </ul>
   </section>
 
-  <!-- Resume Section -->
+  <!-- Resume -->
   <section id="resume">
     <h2>Resume</h2>
-    <p>Want to know more about my experience?</p>
-    <a href="Frontend_Internship_Resume_Rana_Divyarajsinh 2 copy.pdf" download class="cta">Download My Resume</a>
+    <p>Want more details?</p>
+    <a href="Frontend_Internship_Resume_Rana_Divyarajsinh%202%20copy.pdf" download class="cta">Download My Resume</a>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact -->
   <section id="contact">
     <h2>Contact Me</h2>
-    <p><strong>Phone:</strong> <a href="tel:+919904099441">+91 9904099441</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+919904099441">+91 99040 99441</a></p>
     <p><strong>Email:</strong> <a href="mailto:divyarajsinhrana0081@gmail.com">divyarajsinhrana0081@gmail.com</a></p>
     <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/divyarajsinh-rana-77a1372b4" target="_blank">linkedin.com/in/divyarajsinh-rana</a></p>
     <p><strong>GitHub:</strong> <a href="https://github.com/Dev0081118" target="_blank">github.com/Dev0081118</a></p>
   </section>
 
+  <!-- Footer -->
   <footer>
-    &copy; 2025 Rana Divyarajsinh H. All rights reserved.
+    &copy; <span id="year"></span> Rana Divyarajsinh. All rights reserved.
   </footer>
 
+  <script>
+    // Dynamic year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
 ```
