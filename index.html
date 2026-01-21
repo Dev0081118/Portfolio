@@ -4,113 +4,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rana Divyarajsinh H. | Frontend Developer</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
+  <title>Rana Divyarajsinh | Frontend Developer</title>
   <style>
-    /* Reset & Base */
+    /* ---- Reset & Base ---- */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
     body {
-      font-family: 'Poppins', sans-serif;
+      font-family: "Segoe UI", Tahoma, sans-serif;
       line-height: 1.6;
-      color: #333;
+      color: #222;
       background: #f4f4f4;
     }
+    img {
+      max-width: 100%;
+      display: block;
+    }
     a {
-      color: #0077b5;
+      color: #0066cc;
       text-decoration: none;
     }
     a:hover {
       text-decoration: underline;
     }
 
-    /* Layout */
-    header, section {
-      padding: 60px 20px;
+    /* ---- Layout ---- */
+    header,
+    section,
+    footer {
+      padding: 2.5rem 1rem;
       max-width: 900px;
       margin: auto;
-      background: #fff;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
-
-    /* Hero */
     header {
       text-align: center;
+      background: #ffffff;
+      margin-top: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     }
     header img {
       width: 140px;
       height: 140px;
       border-radius: 50%;
+      margin: 0 auto 1rem;
       object-fit: cover;
-      margin-bottom: 20px;
-      border: 4px solid #0077b5;
     }
-    header h1 {
-      font-size: 2.2rem;
-      margin-bottom: 8px;
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
     }
     header p {
-      font-size: 1.1rem;
       color: #555;
     }
 
-    /* Sections */
+    /* ---- Sections ---- */
+    section {
+      background: #ffffff;
+      margin: 1rem auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
     h2 {
-      margin-bottom: 20px;
-      font-size: 1.8rem;
-      color: #0077b5;
+      margin-bottom: 1rem;
+      color: #003366;
     }
     ul {
       list-style: none;
       padding-left: 0;
     }
-    ul li {
-      background: #eef6fb;
-      margin: 8px 0;
-      padding: 10px 15px;
-      border-left: 4px solid #0077b5;
-      border-radius: 4px;
+    li {
+      margin: 0.5rem 0;
     }
 
-    /* CTA Button */
+    /* ---- CTA Button ---- */
     .cta {
       display: inline-block;
-      margin-top: 20px;
-      padding: 12px 28px;
-      background: #0077b5;
-      color: #fff;
-      border-radius: 30px;
-      font-weight: 600;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: #0066cc;
+      color: #ffffff;
+      border-radius: 4px;
+      font-weight: bold;
       transition: background 0.3s ease;
     }
     .cta:hover {
-      background: #005f8d;
+      background: #004d99;
       text-decoration: none;
     }
 
-    /* Footer */
+    /* ---- Footer ---- */
     footer {
       text-align: center;
-      padding: 20px 10px;
-      font-size: 0.9rem;
-      color: #777;
+      font-size: 0.875rem;
+      color: #666;
     }
 
-    /* Responsive */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
-      h2 {
-        font-size: 1.5rem;
+    /* ---- Responsive ---- */
+    @media (min-width: 600px) {
+      h1 {
+        font-size: 2.5rem;
       }
     }
   </style>
@@ -119,17 +114,19 @@
 <body>
   <!-- Hero Section -->
   <header>
-    <img src="image2.jpeg" alt="Rana Divyarajsinh H.">
-    <h1>Rana Divyarajsinh H.</h1>
-    <p>Frontend Developer &nbsp;&bull;&nbsp; HTML &nbsp;&bull;&nbsp; CSS &nbsp;&bull;&nbsp; JavaScript</p>
-    <a href="#contact" class="cta">Hire Me</a>
+    <img src="image2.jpeg" alt="Portrait of Rana Divyarajsinh">
+    <h1>Rana Divyarajsinh</h1>
+    <p>Frontend Developer | HTML, CSS & JavaScript Enthusiast</p>
   </header>
 
   <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I'm an aspiring frontend developer passionate about crafting user-friendly and visually appealing websites. With hands-on experience in HTML, CSS, and JavaScript, I've completed multiple projects that showcase my dedication and creativity. I'm actively seeking a web-development internship to contribute and grow in a collaborative environment.
+      I'm an aspiring frontend developer who loves turning ideas into clean, user-friendly websites.
+      With solid practice in modern HTML, CSS and JavaScript, I've built several mini-projects that
+      sharpen my skills and creativity. I'm now looking for an internship where I can contribute,
+      collaborate and keep growing as a developer.
     </p>
   </section>
 
@@ -137,9 +134,9 @@
   <section id="skills">
     <h2>Skills</h2>
     <ul>
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript (ES6+)</li>
+      <li>HTML5 & Semantic Markup</li>
+      <li>CSS3, Flexbox & Grid</li>
+      <li>JavaScript (ES6+) & DOM Manipulation</li>
     </ul>
   </section>
 
@@ -147,36 +144,36 @@
   <section id="projects">
     <h2>Projects</h2>
     <ul>
-      <li><strong>Rock-Paper-Scissors Game</strong> – Interactive browser game using DOM manipulation</li>
-      <li><strong>Travel Website</strong> – Fully responsive layout with modern visuals</li>
-      <li><strong>To-Do List App</strong> – Task manager with localStorage persistence</li>
-      <li><strong>Amazon Clone</strong> – Product-grid UI mimicking the flagship store</li>
-      <li><strong>Abstract HelpCenter</strong> – Clean, structured help-center interface</li>
+      <li><strong>Rock-Paper-scissors Game</strong> – Interactive browser game with score tracking</li>
+      <li><strong>Travel Website</strong> – Fully responsive landing page with modern styling</li>
+      <li><strong>To-Do List App</strong> – Add, delete & persist tasks using localStorage</li>
+      <li><strong>Amazon Clone</strong> – Product grid layout mimicking Amazon's UI</li>
+      <li><strong>Abstract HelpCenter</strong> – Clean help-center interface with search focus</li>
     </ul>
   </section>
 
   <!-- Resume Section -->
   <section id="resume">
     <h2>Resume</h2>
-    <p>Download my concise one-page resume to learn more about my experience.</p>
-    <a href="Frontend_Internship_Resume_Rana_Divyarajsinh 2 copy.pdf" download class="cta">Download Resume</a>
+    <p>Want to know more about my journey? Grab a copy of my resume.</p>
+    <a class="cta" href="Frontend_Internship_Resume_Rana_Divyarajsinh.pdf" download>Download My Resume</a>
   </section>
 
   <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Me</h2>
-    <p><strong>Phone:</strong> <a href="tel:+919904099441">+91 9904099441</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+919904099441">+91 99040 99441</a></p>
     <p><strong>Email:</strong> <a href="mailto:divyarajsinhrana0081@gmail.com">divyarajsinhrana0081@gmail.com</a></p>
     <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/divyarajsinh-rana-77a1372b4" target="_blank">linkedin.com/in/divyarajsinh-rana</a></p>
     <p><strong>GitHub:</strong> <a href="https://github.com/Dev0081118" target="_blank">github.com/Dev0081118</a></p>
   </section>
 
   <footer>
-    <p>&copy; <span id="year"></span> Rana Divyarajsinh H. All rights reserved.</p>
+    <p>&copy; <span id="year"></span> Rana Divyarajsinh. All rights reserved.</p>
   </footer>
 
   <script>
-    // Dynamic year
+    // Update footer year automatically
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
