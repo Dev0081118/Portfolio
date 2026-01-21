@@ -1,24 +1,157 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rana Divyarajsinh H. | Web Developer Portfolio</title>
-  <link rel="stylesheet" href="home.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rana Divyarajsinh H. | Frontend Developer</title>
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    :root {
+      --primary: #0ea5e9;
+      --primary-dark: #0284c7;
+      --bg: #f0f9ff;
+      --text: #0f172a;
+      --card: #ffffff;
+    }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Layout */
+    header, section, footer {
+      padding: 3rem 1.5rem;
+      margin: 0 auto;
+      max-width: 900px;
+    }
+    header {
+      text-align: center;
+      background: var(--card);
+      border-radius: 0 0 16px 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin: 0 auto 1rem;
+      object-fit: cover;
+      border: 4px solid var(--primary);
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--primary-dark);
+    }
+
+    /* Sections */
+    section {
+      background: var(--card);
+      margin: 1.5rem auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      margin: 0.5rem 0;
+    }
+
+    /* Skills */
+    #skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    #skills li {
+      background: var(--bg);
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+
+    /* Projects */
+    #projects li strong {
+      color: var(--primary-dark);
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.2s;
+      margin-top: 1rem;
+    }
+    .btn:hover {
+      background: var(--primary-dark);
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.875rem;
+      color: #64748b;
+    }
+
+    /* Responsive */
+    @media (min-width: 600px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+      header img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <!-- Hero Section -->
   <header>
-    <img src="image2.jpeg" alt="Rana Divyarajsinh H." />
+    <img src="image2.jpeg" alt="Portrait of Rana Divyarajsinh H.">
     <h1>Rana Divyarajsinh H.</h1>
-    <p>Frontend Developer | HTML, CSS, JavaScript</p>
+    <p>Frontend Developer | HTML, CSS & JavaScript</p>
+    <a href="#contact" class="btn">Hire Me</a>
   </header>
 
   <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
     <p>
-     Hello I'm an aspiring frontend developer passionate about crafting user-friendly and visually appealing websites. With hands-on experience in HTML, CSS, and JavaScript, I've completed multiple projects that showcase my dedication and creativity. I'm actively seeking a web development internship to contribute and grow in a collaborative environment.
+      I’m an enthusiastic frontend developer who loves turning ideas into clean, interactive websites. 
+      With practical experience in HTML, CSS and JavaScript, I’ve built several projects that highlight my attention to detail and passion for great user experiences. 
+      I’m currently looking for an internship where I can contribute, learn and grow alongside a supportive team.
     </p>
   </section>
 
@@ -36,33 +169,34 @@
   <section id="projects">
     <h2>Projects</h2>
     <ul>
-      <li><strong>Rock-Paper-Scissor Game</strong> – Interactive game using DOM manipulation</li>
-      <li><strong>Travel Website</strong> – Responsive design with visual appeal</li>
-      <li><strong>To-Do List</strong> – Task management app with localStorage</li>
-      <li><strong>Amazon Clone</strong> – Simple product layout & UI mimic</li>
-      <li><strong>Abstract HelpCenter</strong> – UI-based project with structured layout</li>
+      <li><strong>Rock-Paper-Scissor Game</strong> – Interactive browser game with DOM manipulation and score tracking</li>
+      <li><strong>Travel Website</strong> – Fully responsive landing page with modern CSS and semantic HTML</li>
+      <li><strong>To-Do List</strong> – Task manager that saves data in localStorage for persistence</li>
+      <li><strong>Amazon Clone</strong> – Product showcase page replicating Amazon’s clean UI layout</li>
+      <li><strong>Abstract HelpCenter</strong> – Structured help-center interface focused on usability</li>
     </ul>
   </section>
 
   <!-- Resume Section -->
   <section id="resume">
     <h2>Resume</h2>
-    <a href="Frontend_Internship_Resume_Rana_Divyarajsinh 2 copy.pdf" download>Download My Resume</a>
+    <p>Download my concise one-page résumé to learn more about my journey and skill set.</p>
+    <a href="Frontend_Internship_Resume_Rana_Divyarajsinh 2 copy.pdf" class="btn" download>Download Résumé</a>
   </section>
 
   <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Me</h2>
-    <p><strong>Phone:</strong> 9904099441</p>
+    <p><strong>Phone:</strong> <a href="tel:+919904099441">+91 9904099441</a></p>
     <p><strong>Email:</strong> <a href="mailto:divyarajsinhrana0081@gmail.com">divyarajsinhrana0081@gmail.com</a></p>
-    <p><strong>LinkedIn:</strong> <a href="www.linkedin.com/in/
-divyarajsinh-rana-77a1372b4">Click Here.</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/Dev0081118">Click Here.</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/divyarajsinh-rana-77a1372b4" target="_blank" rel="noopener">linkedin.com/in/divyarajsinh-rana</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/Dev0081118" target="_blank" rel="noopener">github.com/Dev0081118</a></p>
   </section>
 
   <footer>
     <p>&copy; 2025 Rana Divyarajsinh H. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
-
+```
